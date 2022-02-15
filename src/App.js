@@ -1,12 +1,26 @@
-import './App.css';
 import { Header } from './components/header/Header'; 
 import { Footer } from './components/footer/Footer'; 
-import './assets/styles/app.min.css'
+import axios from 'axios';
+import { Index } from './components/main/Index'
+
+const GetMock = async () => {
+  try {
+    const newData = await axios.get('/header.json')
+    const values = newData.data
+    console.log(values)
+    return values
+  } catch (error) {
+    throw new Error('error')
+  }
+}
 
 function App() {
+  const props = GetMock()
+
   return (
     <div className="App">
-      <Header />
+      <Header data={props}/>
+      <Index />
       <Footer/>
     </div>
   );

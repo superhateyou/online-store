@@ -1,0 +1,10 @@
+{
+    "HeaderTop": {
+        "TopMenu" : [
+            {"id" : 1, "title" : "О компании", "link" : "!#"},
+            {"id" : 2, "title" : "Оплата", "link" : "!#"},
+            {"id" : 3, "title" : "Доставка", "link" : "!#"}
+        ],
+        "Subscribe" :  {"id" : 4, "title" : "Подписаться", "link" : "!#"}}
+    }
+}

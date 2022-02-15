@@ -2,12 +2,13 @@ import { HeaderBottom } from "./HeaderBottom/HeaderBottom"
 import { HeaderMiddle } from "./HeaderMiddle/HeaderMiddle"
 import { HeaderTop } from "./HeaderTop/HeaderTop"
 
-export const Header = () => {
+export const Header = ({data}) => {
+    console.log('here', data)
     return (
-        <div className="header">
+        <header className="header">
             <HeaderTop />
             <HeaderMiddle />
             <HeaderBottom />
-        </div>
+        </header>
     )
 }
