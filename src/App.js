@@ -1,25 +1,32 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react'
 import { Header } from './components/header/Header'; 
 import { Footer } from './components/footer/Footer'; 
-import axios from 'axios';
 import { Index } from './components/main/Index'
 
-const GetMock = async () => {
-  try {
-    const newData = await axios.get('/header.json')
-    const values = newData.data
-    console.log(values)
-    return values
-  } catch (error) {
-    throw new Error('error')
-  }
-}
+// const getData = async () => {
+//   try {
+//     const newData = await axios.get('/header.json')
+//     // .then(res => JSON.stringify(res))
+//     const values = newData.data
+//     return values
+//   } catch (error) {
+//     throw new Error('error')
+//   }
+// }
 
 function App() {
-  const props = GetMock()
+  const [header, setHeader] = useState({})
+  
+  useEffect(() => {
+    axios.get('/header.json')
+      .then(res => setHeader(res.data))
+      .catch(err => console.log(err))
+  }, [])
 
   return (
     <div className="App">
-      <Header data={props}/>
+      <Header data={header}/>
       <Index />
       <Footer/>
     </div>
@@ -27,3 +34,4 @@ function App() {
 }
 
 export default App;
+

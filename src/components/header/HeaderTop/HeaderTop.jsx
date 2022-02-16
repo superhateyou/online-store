@@ -1,7 +1,7 @@
 import { Search } from "./Search"
 import { TopMenu } from "./TopMenu"
 
-export const HeaderTop = () => {
+export const HeaderTop = ({data}) => {
   return (
     <div className="header__top">
       <div className="container header__container header__container_top">
@@ -12,7 +12,7 @@ export const HeaderTop = () => {
             </a>
         </div>
         <div className="header__col header__col_top-right">
-            <TopMenu/>
+            <TopMenu data={data}/>
             <Search />
         </div>
       </div>
