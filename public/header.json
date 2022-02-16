@@ -18,9 +18,25 @@
         ],
         "button" : {"id": "fuaephfea542", "title": "Контактная информация", "link": "!#"}
     },
-    "botMenu": [
-        { "id": 1, "title": "О компании", "link": "!#" },
-        { "id": 2, "title": "Оплата", "link": "!#" },
-        { "id": 3, "title": "Доставка", "link": "!#" }
-    ]
+    "botMenu": {
+        "vertMenuItems" : [
+            {
+                "id": "suhafaw5435", "link": "!#", "title": "Варежки",
+                "subItems" : [
+                    {"id": "suha432432435", "link": "!#", "title": "Демисезонные"},
+                    {"id": "sfdsfds352fds", "link": "!#", "title": "Для новорождённых"}
+                ]
+            
+            },
+            {"id": "suhafaw5435", "link": "!#", "title": "Горловина и шарфы"},
+            {"id": "suhafaw5435", "link": "!#", "title": "Носки"},
+            {
+                "id": "suhafaw5435", "link": "!#", "title": "Перчатки",
+                "subItems" : [
+                    {"id": "sfd32432435", "link": "!#", "title": "Демисезонные"},
+                    {"id": "zcccesfds352", "link": "!#", "title": "Зимние"}
+                ]
+            }
+        ]
+    }
 }

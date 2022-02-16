@@ -1,28 +1,15 @@
-export const FooterCol = () => {
+export const FooterCol = ({ data }) => {
     return (
         <div className="footer__col">
-            <h3 className="footer__title">Покупки</h3>
+            <h3 className="footer__title">{data && data.name}</h3>
             <ul className="list">
-                <li className="list__item">
-                    <a href="javascript:void(0);" className="footer__text">
-                        Как купить
-                    </a>
-                </li>
-                <li className="list__item">
-                    <a href="javascript:void(0);" className="footer__text">
-                        Как купить
-                    </a>
-                </li>
-                <li className="list__item">
-                    <a href="javascript:void(0);" className="footer__text">
-                        Как купить
-                    </a>
-                </li>
-                <li className="list__item">
-                    <a href="javascript:void(0);" className="footer__text">
-                        Как купить
-                    </a>
-                </li>
+                {data && data.list.map(el => (
+                    <li className="list__item" id={el.id}>
+                        <a href={el.link} className="footer__text">
+                            {el.title}{el.symbol ? <sup>®</sup> : ''}
+                        </a>
+                    </li>
+                ))}
             </ul>
         </div>
     )

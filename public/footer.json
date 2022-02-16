@@ -1,0 +1,55 @@
+{
+    "footerCols" : [
+        {
+            "name" : "Покупки",
+            "list" : [
+                {"id": "gs70gyr70ga", "title": "Как купить", "link": "!#"},
+                {"id": "v098vhadfaf", "title": "Пользовательское соглашение", "link": "!#"},
+                {"id": "xzjvz986fdf", "title": "Контакты", "link": "!#"},
+                {"id": "9f80a7sfaaf", "title": "Способы оплаты заказа", "link": "!#"},
+                {"id": "pmfwampv9ea", "title": "Доставка", "link": "!#"},
+                {"id": "qrfdsvr5435", "title": "Возврат товара", "link": "!#"},
+                {"id": "cm80ewcnewe", "title": "Таблица размеров", "link": "!#"},
+                {"id": "ivpaume3255", "title": "Часто задаваемые вопросы", "link": "!#"},
+                {"id": "nc32n98c3ff", "title": "Как правильно одевать ребенка", "link": "!#"}
+            ]
+        },
+        {
+            "name" : "Lassie",
+            "list" : [
+                {"id": "an3v-7ae7are", "title": "О компании lassie", "link": "!#"},
+                {"id": "n90av8ea8e9f", "title": "История", "link": "!#"},
+                {"id": "a7b6e7f6efb6", "title": "Качество?", "link": "!#"},
+                {"id": "zuonfefefesf", "title": "Уход за вещами", "link": "!#"},
+                {"id": "7895fbc9asdd", "title": "Категории Lassie", "symbol": "®", "link": "!#"},
+                {"id": "689vadbs7fdf", "title": "Символы Lassie","symbol": "®", "link": "!#"}
+            ]
+        },
+        {
+            "name" : "Lassie клуб",
+            "list" : [
+                {"id": "ma89v 3m3wa7", "title": "Зарегистрироваться", "link": "!#"},
+                {"id": "0qn89c23c3n8", "title": "Войти в личный кабинет", "link": "!#"},
+                {"id": "arwn3vacnaec", "title": "Забыли Ваш пароль?", "link": "!#"},
+                {"id": "a89wncCNW983", "title": "Защита персональной информации", "link": "!#"}
+            ]
+        }
+    ],
+    "networks" : {
+        "name" : "Социальные сети",
+        "list" : [
+            {"id": "ma89v 3m3wa7", "short": "socials__name_vk", "icon": "icon-vkontakte", "link": "!#"},
+            {"id": "0qn89c23c3n8", "short": "socials__name_ok", "icon": "icon-odnoklassniki", "link": "!#"},
+            {"id": "arwn3vacnaec", "short": "socials__name_fb", "icon": "icon-facebook", "link": "!#"},
+            {"id": "a89wncCNW983", "short": "socials__name_tw", "icon": "icon-twitter-bird", "link": "!#"}
+        ]
+    },
+    "bottom" : {
+        "footerText": "Официальный интернет-магазин Lassie® в России",
+        "numbers" : [
+            {"id": "p[fad5s4tt4", "title": "(горячая линия)", "phone": "8 (800) 333-12-04", "link": "tel:+78003331204"},
+            {"id": "na8v48angga", "title": "(ежедневно с 9:00 до 24:00)", "phone": "8 (495) 215-04-35", "link": "tel:+74952150435"}
+        ],
+        "order" :  {"id": "r435fajgag", "title": "order@lassieshop.ru", "link": "mailto:order@lassieshop.ru"}
+    }
+}
