@@ -6,7 +6,7 @@ export const Header = ({data}) => {
     return (
         <header className="header">
             <HeaderTop data={data.topMenu}/>
-            <HeaderMiddle />
+            <HeaderMiddle data={data.midContacts} logo={data.logo}/>
             <HeaderBottom />
         </header>
     )

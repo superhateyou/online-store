@@ -1,14 +1,23 @@
 {
     "topMenu": [
-        { "id": 1, "title": "О компании", "link": "!#" },
-        { "id": 2, "title": "Оплата", "link": "!#" },
-        { "id": 3, "title": "Доставка", "link": "!#" }
+        { "id": "ffai03532fam", "title": "О компании", "link": "!#" },
+        { "id": "pfon43gfdhfa", "title": "Оплата", "link": "!#" },
+        { "id": "90gsagegpefd", "title": "Доставка", "link": "!#" }
     ],
-    "midMenu": [
-        { "id": 1, "title": "О компании", "link": "!#" },
-        { "id": 2, "title": "Оплата", "link": "!#" },
-        { "id": 3, "title": "Доставка", "link": "!#" }
-    ],
+    "logo": {"id": "fiaohpe543f", "link": "assets/images/logo.png", "alt": "logo"},
+    "midContacts": {
+        "info": [
+            {   "id": "nreaa543faf", 
+                "title_1": "8 495 215-04-35", 
+                "title_2": "с 9:00 до 24:00 ежедневно", 
+                "link": "tel:+74952150435" },
+            {   "id": "ffae3209fae", 
+                "title_1": "8 800 333-12-04", 
+                "title_2": "24 часа 7 дней в неделю", 
+                "link": "tel:+78003331204" }
+        ],
+        "button" : {"id": "fuaephfea542", "title": "Контактная информация", "link": "!#"}
+    },
     "botMenu": [
         { "id": 1, "title": "О компании", "link": "!#" },
         { "id": 2, "title": "Оплата", "link": "!#" },
