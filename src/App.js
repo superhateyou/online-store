@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react'
-import { Header } from './components/header/Header'; 
-import { Footer } from './components/footer/Footer'; 
+import { Header } from './components/header/Header';
+import { Footer } from './components/footer/Footer';
 import { Index } from './components/main/Index'
 
 // const getData = async () => {
@@ -18,21 +18,21 @@ import { Index } from './components/main/Index'
 function App() {
   const [header, setHeader] = useState({})
   const [footer, setFooter] = useState({})
-  
+
   useEffect(() => {
     axios.get('/header.json')
       .then(res => setHeader(res.data))
       .catch(err => console.log(err))
-      axios.get('/footer.json')
+    axios.get('/footer.json')
       .then(res => setFooter(res.data))
       .catch(err => console.log(err))
   }, [])
 
   return (
     <div className="App">
-      <Header data={header}/>
+      <Header data={header} />
       <Index />
-      <Footer data={footer}/>
+      <Footer data={footer} />
     </div>
   );
 }
