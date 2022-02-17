@@ -1,34 +1,46 @@
 {
-    "topMenu": [
-        { "id": "ffai03532fam", "title": "О компании", "link": "!#" },
-        { "id": "pfon43gfdhfa", "title": "Оплата", "link": "!#" },
-        { "id": "90gsagegpefd", "title": "Доставка", "link": "!#" }
+  "topMenu": [
+    { "id": "ffai03532fam", "title": "О компании", "link": "!#" },
+    { "id": "pfon43gfdhfa", "title": "Оплата", "link": "!#" },
+    { "id": "90gsagegpefd", "title": "Доставка", "link": "!#" }
+  ],
+  "logo": {
+    "id": "fiaohpe543f",
+    "link": "assets/images/logo.png",
+    "alt": "logo"
+  },
+  "midContacts": {
+    "info": [
+      {
+        "id": "nreaa543faf",
+        "title_1": "8 495 215-04-35",
+        "title_2": "с 9:00 до 24:00 ежедневно",
+        "link": "tel:+74952150435"
+      },
+      {
+        "id": "ffae3209fae",
+        "title_1": "8 800 333-12-04",
+        "title_2": "24 часа 7 дней в неделю",
+        "link": "tel:+78003331204"
+      }
     ],
-    "logo": {"id": "fiaohpe543f", "link": "assets/images/logo.png", "alt": "logo"},
-    "midContacts": {
-        "info": [
-            {   "id": "nreaa543faf", 
-                "title_1": "8 495 215-04-35", 
-                "title_2": "с 9:00 до 24:00 ежедневно", 
-                "link": "tel:+74952150435" },
-            {   "id": "ffae3209fae", 
-                "title_1": "8 800 333-12-04", 
-                "title_2": "24 часа 7 дней в неделю", 
-                "link": "tel:+78003331204" }
-        ],
-        "button" : {"id": "fuaephfea542", "title": "Контактная информация", "link": "!#"}
-    },
-    "botMenu": {
-        "collapseMenu": [
-            {"id": "fsn89e0nfes", "title": "Распродажа", "link": "!#"},
-            {"id": "cn38n2c32cm", "title": "Для новорожденных", "link": "!#"},
-            {"id": "caenfae9f9a", "title": "Аксессуары", "link": "!#"},
-            {"id": "na3sdf7dasf", "title": "Обувь", "link": "!#"},
-            {"id": "vnafdas87fd", "title": "Летняя одежда", "link": "!#"},
-            {"id": "f0asdb7bfds", "title": "Для прогулки и спорта", "link": "!#"},
-            {"id": "n4ro3i4un3f", "title": "Игра слоями", "link": "!#"},
-            {"id": "fdfdsan7fds", "title": "Верхняя одежда", "link": "!#"},
-            {"id": "43inff0ndsf", "title": "Коллекции", "link": "!#"}
-        ]
+    "button": {
+      "id": "fuaephfea542",
+      "title": "Контактная информация",
+      "link": "!#"
     }
+  },
+  "botMenu": {
+    "collapseMenu": [
+      { "id": "fsn89e0nfes", "title": "Распродажа", "link": "!#" },
+      { "id": "cn38n2c32cm", "title": "Для новорожденных", "link": "!#" },
+      { "id": "caenfae9f9a", "title": "Аксессуары", "link": "!#" },
+      { "id": "na3sdf7dasf", "title": "Обувь", "link": "!#" },
+      { "id": "vnafdas87fd", "title": "Летняя одежда", "link": "!#" },
+      { "id": "f0asdb7bfds", "title": "Для прогулки и спорта", "link": "!#" },
+      { "id": "n4ro3i4un3f", "title": "Игра слоями", "link": "!#" },
+      { "id": "fdfdsan7fds", "title": "Верхняя одежда", "link": "!#" },
+      { "id": "43inff0ndsf", "title": "Коллекции", "link": "!#" }
+    ]
+  }
 }
