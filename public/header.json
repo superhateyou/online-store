@@ -19,24 +19,16 @@
         "button" : {"id": "fuaephfea542", "title": "Контактная информация", "link": "!#"}
     },
     "botMenu": {
-        "vertMenuItems" : [
-            {
-                "id": "suhafaw5435", "link": "!#", "title": "Варежки",
-                "subItems" : [
-                    {"id": "suha432432435", "link": "!#", "title": "Демисезонные"},
-                    {"id": "sfdsfds352fds", "link": "!#", "title": "Для новорождённых"}
-                ]
-            
-            },
-            {"id": "suhafaw5435", "link": "!#", "title": "Горловина и шарфы"},
-            {"id": "suhafaw5435", "link": "!#", "title": "Носки"},
-            {
-                "id": "suhafaw5435", "link": "!#", "title": "Перчатки",
-                "subItems" : [
-                    {"id": "sfd32432435", "link": "!#", "title": "Демисезонные"},
-                    {"id": "zcccesfds352", "link": "!#", "title": "Зимние"}
-                ]
-            }
+        "collapseMenu": [
+            {"id": "fsn89e0nfes", "title": "Распродажа", "link": "!#"},
+            {"id": "cn38n2c32cm", "title": "Для новорожденных", "link": "!#"},
+            {"id": "caenfae9f9a", "title": "Аксессуары", "link": "!#"},
+            {"id": "na3sdf7dasf", "title": "Обувь", "link": "!#"},
+            {"id": "vnafdas87fd", "title": "Летняя одежда", "link": "!#"},
+            {"id": "f0asdb7bfds", "title": "Для прогулки и спорта", "link": "!#"},
+            {"id": "n4ro3i4un3f", "title": "Игра слоями", "link": "!#"},
+            {"id": "fdfdsan7fds", "title": "Верхняя одежда", "link": "!#"},
+            {"id": "43inff0ndsf", "title": "Коллекции", "link": "!#"}
         ]
     }
 }

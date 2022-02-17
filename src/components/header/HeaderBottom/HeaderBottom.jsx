@@ -1,7 +1,7 @@
-import { NavCollapse } from './NavCollapse'
+import { CollapseMenu } from './CollapseMenu'
 import { CollapseButton } from './CollapseButton'
 
-export const HeaderBottom = () => {
+export const HeaderBottom = ({data}) => {
     return (
         <div className="header__bottom">
             <div className="container">
@@ -10,7 +10,7 @@ export const HeaderBottom = () => {
 
                     </ul>
                     <CollapseButton />
-                    <NavCollapse />
+                    <CollapseMenu data={data && data.collapseMenu}/>
                 </nav>
             </div>
         </div>
