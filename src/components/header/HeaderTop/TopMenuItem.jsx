@@ -1,8 +1,8 @@
-export const TopMenuItem = ({id, link, title}) => {
+export const TopMenuItem = ({ data }) => {
   return (
-    <li className="menu__item" key={id}>
-      <a href={link} className="link menu__name">
-        {title}
+    <li className="menu__item">
+      <a href={data.link} className="link menu__name">
+        {data.title}
       </a>
     </li>
   )

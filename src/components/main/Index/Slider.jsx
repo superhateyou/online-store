@@ -10,7 +10,7 @@ export const Slider = () => {
                     </div>
                 </li>
                 <li className="slider__item">
-                    <img src="/assets/images/slider-1.jpg" alt="" className="slider__img" />
+                    <img src="/assets/images/logo.png" alt="" className="slider__img" />
                     <div className="index__slider-title">
                         Встречаем осень
                         <br />с новой коллекцией
