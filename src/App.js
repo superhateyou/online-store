@@ -18,6 +18,7 @@ import { Index } from './components/main/Index'
 function App() {
   const [header, setHeader] = useState({})
   const [footer, setFooter] = useState({})
+  const [main, setMain] = useState({})
 
   useEffect(() => {
     axios.get('/header.json')
@@ -26,12 +27,15 @@ function App() {
     axios.get('/footer.json')
       .then(res => setFooter(res.data))
       .catch(err => console.log(err))
+    axios.get('/main.json')
+      .then(res => setMain(res.data))
+      .catch(err => console.log(err))
   }, [])
 
   return (
     <div className="App">
       <Header data={header} />
-      <Index />
+      <Index data={main} />
       <Footer data={footer} />
     </div>
   );
