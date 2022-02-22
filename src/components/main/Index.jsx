@@ -5,7 +5,7 @@ export const Index = ({ data }) => {
   return (
     <main className="content index">
       <Slider data={data && data.slider} />
-      <Popular />
+      <Popular data={data && data.goodsList} />
     </main>
   )
 }

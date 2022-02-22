@@ -3,7 +3,7 @@ export const Slider = ({ data }) => {
     <div className="index__slider slider">
       <ul className="slider__container">
         {data && data.map(el => (
-          <li className="slider__item">
+          <li className="slider__item" key={el.id}>
             <img src={el.link} alt="" className="slider__img" />
             <div className="index__slider-title">
               {el.title_1}

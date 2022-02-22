@@ -18,5 +18,55 @@
       "title_2": "c новой коллекцией",
       "link": "/assets/images/slider-3.jpg"
     }
+  ],
+  "goodsList": [
+    {
+      "link": "!#",
+      "id": "faeba6cxzecce",
+      "imgLink": "assets/images/good-1.jpg",
+      "imgAlt": "Товар",
+      "type": "new",
+      "name": "Шапка-бини для новорожденных Hilal",
+      "price": "1 599 р",
+      "sizes": [
+        { "size": 74, "isStock": true },
+        { "size": 80, "isStock": true },
+        { "size": 86, "isStock": false },
+        { "size": 92, "isStock": true },
+        { "size": 98, "isStock": false }
+      ]
+    },
+    {
+      "link": "!#",
+      "id": "faebafdsfdsce",
+      "imgLink": "assets/images/good-1.jpg",
+      "imgAlt": "Товар",
+      "type": "sale",
+      "name": "Шапка-бини для новорожденных Hilal",
+      "price": "999 р",
+      "sizes": [
+        { "size": 74, "isStock": false },
+        { "size": 80, "isStock": true },
+        { "size": 86, "isStock": false },
+        { "size": 92, "isStock": false },
+        { "size": 98, "isStock": false }
+      ]
+    },
+    {
+      "link": "!#",
+      "id": "faefdsfsce",
+      "imgLink": "assets/images/good-1.jpg",
+      "imgAlt": "Товар",
+      "type": "",
+      "name": "Шапка-бини для новорожденных Hilal",
+      "price": "1 299 р",
+      "sizes": [
+        { "size": 74, "isStock": false },
+        { "size": 80, "isStock": true },
+        { "size": 86, "isStock": true },
+        { "size": 92, "isStock": true },
+        { "size": 98, "isStock": true }
+      ]
+    }
   ]
 }

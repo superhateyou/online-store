@@ -1,7 +1,6 @@
 import { DropdownItem } from "./DropdownItem"
 
 export const MenuItem = ({ data }) => {
-  console.log(data)
   return (
     <li className="menu__item">
       <a href={data.link} className="menu__name">

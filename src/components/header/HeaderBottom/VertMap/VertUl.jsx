@@ -1,5 +1,4 @@
 export const VertUl = ({ data }) => {
-  console.log("here")
   return (
     <ul className="vertical-menu__submenu">
       <li className="vertical-menu__submenu-item">

@@ -1,7 +1,6 @@
 import { VertMenuItem } from "./VertMenuItem"
 
 export const DropdownItem = ({ data }) => {
-  console.log("here", data)
   return (
     <li className="dropdown-menu__content">
       <div className="dropdown-menu__img">

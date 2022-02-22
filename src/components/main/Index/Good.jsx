@@ -1,118 +1,50 @@
-export const Good = () => {
+import { GoodSizes } from "./GoodSizes"
+
+export const Good = ({ data }) => {
+  let typeSpan
+  if (data && data.type) {
+    typeSpan = <span className={`flag flag_type_${data.type}`}>{data.type}</span>
+  } else {
+    typeSpan = <span className="flag"></span>
+  }
+
   return (
     <li className="goods__item" >
       <article className="good">
         <div className="good__content">
-          <a href="!#" className="good__link">
+          <a href={data && data.link} className="good__link">
             <img
-              src="assets/images/good-1.jpg"
-              alt="Товар"
+              src={data && data.imgLink}
+              alt={data && data.imgAlt}
               className="good__img"
               title=""
             />
-            <span className="flag flag_type_new">new</span>
+            {typeSpan}
           </a>
           <a href="!#" className="like">
             Мне нравится
           </a>
-          <h4 className="good__name">Шапка-бини для новорожденных Hilal</h4>
+          <h4 className="good__name">{data && data.name}</h4>
           <div className="good__price-wrapper">
-            <span className="good__price">1 599 р.</span>
+            <span className="good__price">{data && data.price}.</span>
           </div>
         </div>
         <div className="good__hover">
           <form method="post" action="" className="form good__order">
             <div className="good__order-row">
               <label className="good__order-label">Выберите размер</label>
-              <div className="checkbox-tile">
-                <input
-                  id="good0-size0"
-                  name="Good[size]"
-                  type="radio"
-                  defaultValue={74}
-                  required=""
-                  className="checkbox-tile__elem"
-                />
-                <label
-                  htmlFor="good0-size0"
-                  className="checkbox-tile__label"
-                >
-                  74
-                </label>
-              </div>
-              <div className="checkbox-tile">
-                <input
-                  id="good0-size1"
-                  name="Good[size]"
-                  type="radio"
-                  defaultValue={80}
-                  required=""
-                  className="checkbox-tile__elem"
-                />
-                <label
-                  htmlFor="good0-size1"
-                  className="checkbox-tile__label"
-                >
-                  80
-                </label>
-              </div>
-              <div className="checkbox-tile">
-                <input
-                  id="good0-size2"
-                  name="Good[size]"
-                  type="radio"
-                  defaultValue={86}
-                  required=""
-                  className="checkbox-tile__elem"
-                />
-                <label
-                  htmlFor="good0-size2"
-                  className="checkbox-tile__label"
-                >
-                  86
-                </label>
-              </div>
-              <div className="checkbox-tile">
-                <input
-                  id="good0-size3"
-                  name="Good[size]"
-                  type="radio"
-                  defaultValue={92}
-                  required=""
-                  className="checkbox-tile__elem"
-                />
-                <label
-                  htmlFor="good0-size3"
-                  className="checkbox-tile__label"
-                >
-                  92
-                </label>
-              </div>
-              <div className="checkbox-tile">
-                <input
-                  id="good0-size4"
-                  name="Good[size]"
-                  type="radio"
-                  defaultValue={98}
-                  required=""
-                  className="checkbox-tile__elem"
-                />
-                <label
-                  htmlFor="good0-size4"
-                  className="checkbox-tile__label"
-                >
-                  98
-                </label>
-              </div>
+              {data && data.sizes.map((el, i) => (
+                <GoodSizes key={`${data.id}${el}`} data={el} id={data.id} />
+              ))}
             </div>
             <div className="good__order-row">
-              <label htmlFor="good0-num" className="good__order-label">
+              <label htmlFor={`${data && data.id}-num`} className="good__order-label">
                 Количество
               </label>
               <div className="input-number">
                 <input
-                  id="good0-num"
-                  name="Good[number]"
+                  id={`${data && data.id}-num`}
+                  name={`${data && data.id}[number]`}
                   type="number"
                   step={1}
                   min={1}
@@ -134,7 +66,7 @@ export const Good = () => {
             </button>
           </form>
         </div>
-      </article>
+      </article >
     </li >
   )
 }
