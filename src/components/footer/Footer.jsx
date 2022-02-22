@@ -1,6 +1,7 @@
 import { FooterBottom } from "./FooterBottom"
 import { FooterCol } from "./FooterCol"
 import { SocialNetworks } from "./SocialNetworks"
+import React from "react"
 
 export const Footer = ({ data }) => {
   return (

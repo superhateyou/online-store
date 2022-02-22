@@ -39,29 +39,13 @@ function App() {
   }, [])
 
   return (
-    <div>
+    <div className="App">
+      <Header data={header} />
       <Routes>
-        <Route path="*" element={
-          <div className="App">
-            <Header data={header} />
-            <Index data={main} goods={goods} />
-            <Footer data={footer} />
-          </div>
-        } />
-        <Route path="/catalog" element={
-          <div className="App">
-            <Header data={header} />
-            <Index data={main} goods={goods} />
-          </div>
-        } />
-        <Route path="/product" element={
-          <div className="App">
-            <Header data={header} />
-            <Product />
-            <Footer data={footer} />
-          </div>
-        } />
+        <Route path="/" element={<Index data={main} goods={goods} />} />
+        <Route path="/catalog" element={<Product />} />
       </Routes>
+      <Footer data={footer} />
     </div>
   );
 }
