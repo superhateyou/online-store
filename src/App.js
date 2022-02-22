@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import { Header } from './components/header/Header';
 import { Footer } from './components/footer/Footer';
 import { Index } from './components/main/Index'
+import { Product } from './components/main/Product';
 
 // const getData = async () => {
 //   try {
@@ -51,6 +52,13 @@ function App() {
           <div className="App">
             <Header data={header} />
             <Index data={main} goods={goods} />
+          </div>
+        } />
+        <Route path="/product" element={
+          <div className="App">
+            <Header data={header} />
+            <Product />
+            <Footer data={footer} />
           </div>
         } />
       </Routes>
