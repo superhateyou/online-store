@@ -19,6 +19,7 @@ function App() {
   const [header, setHeader] = useState({})
   const [footer, setFooter] = useState({})
   const [main, setMain] = useState({})
+  const [goods, setGoods] = useState({})
 
   useEffect(() => {
     axios.get('/header.json')
@@ -30,12 +31,15 @@ function App() {
     axios.get('/main.json')
       .then(res => setMain(res.data))
       .catch(err => console.log(err))
+    axios.get('/goods.json')
+      .then(res => setGoods(res.data))
+      .catch(err => console.log(err))
   }, [])
 
   return (
     <div className="App">
       <Header data={header} />
-      <Index data={main} />
+      <Index data={main} goods={goods} />
       <Footer data={footer} />
     </div>
   );
