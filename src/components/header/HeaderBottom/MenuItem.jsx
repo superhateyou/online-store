@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom"
 import { DropdownItem } from "./DropdownItem"
 
 export const MenuItem = ({ data }) => {
   return (
     <li className="menu__item">
-      <a href={data.link} className="menu__name">
+      <Link to={data.link} className="menu__name">
         {data.menuName}
-      </a>
+      </Link>
       <ul className="dropdown-menu">
         <DropdownItem data={data.ddMenu} />
       </ul>

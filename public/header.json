@@ -42,7 +42,7 @@
       { "id": "fdfdsan7fds", "title": "Верхняя одежда", "link": "!#" },
       { "id": "43inff0ndsf", "title": "Коллекции", "link": "!#" }
     ],
-    "catalog": { "title": "Каталог", "link": "!#" },
+    "catalog": { "title": "Каталог", "link": "/catalog" },
     "sale": { "title": "Распродажа", "link": "!#" },
     "botNav": [
       {

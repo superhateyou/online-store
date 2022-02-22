@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { Route, Routes } from 'react-router';
 import { useEffect, useState } from 'react'
 import { Header } from './components/header/Header';
 import { Footer } from './components/footer/Footer';
@@ -37,10 +38,21 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <Header data={header} />
-      <Index data={main} goods={goods} />
-      <Footer data={footer} />
+    <div>
+      <Routes>
+        <Route path="*" element={
+          <div className="App">
+            <Header data={header} />
+            <Index data={main} goods={goods} />
+            <Footer data={footer} />
+          </div>
+        } />
+        <Route path="/catalog" element={
+          <div className="App">
+            <Index data={main} goods={goods} />
+          </div>
+        } />
+      </Routes>
     </div>
   );
 }
