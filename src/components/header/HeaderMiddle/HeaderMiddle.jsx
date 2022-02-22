@@ -7,7 +7,7 @@ export const HeaderMiddle = ({ data, logo }) => {
     <div className="header__middle">
       <div className="container header__container header__container_middle">
         <div className="header__col header__col_logo">
-          <Link to="*" className="header__logo logo">
+          <Link to="/" className="header__logo logo">
             <img src={logo && logo.link}
               id={logo && logo.id}
               className="logo__img"

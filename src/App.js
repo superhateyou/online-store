@@ -49,6 +49,7 @@ function App() {
         } />
         <Route path="/catalog" element={
           <div className="App">
+            <Header data={header} />
             <Index data={main} goods={goods} />
           </div>
         } />
