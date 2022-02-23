@@ -43,7 +43,7 @@
       { "id": "43inff0ndsf", "title": "Коллекции", "link": "!#" }
     ],
     "catalog": { "title": "Каталог", "link": "/catalog" },
-    "sale": { "title": "Распродажа", "link": "!#" },
+    "sale": { "title": "Распродажа", "link": "/sale" },
     "botNav": [
       {
         "menuName": "Верхняя одежда",

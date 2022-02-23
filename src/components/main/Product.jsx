@@ -1,12 +1,14 @@
 import { Breadcrumbs } from "./Product/Breadcrumbs"
-import { Card } from "./Product/Card/Card"
+import { CardTop } from './Product/Card/CardTop'
 
-export const Product = () => {
+export const Product = ({ data }) => {
   return (
     <main className="content product-page">
       <div className="container">
         <Breadcrumbs />
-        <Card />
+        <div className="card product-page__card">
+          <CardTop data={data && data.find(item => item.id === "faeba6cxzecce")} />
+        </div>
       </div>
     </main>
   )

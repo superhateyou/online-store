@@ -43,7 +43,7 @@ function App() {
       <Header data={header} />
       <Routes>
         <Route path="/" element={<Index data={main} goods={goods} />} />
-        <Route path="/catalog" element={<Product />} />
+        <Route path="/product" element={<Product data={goods.goodsList} />} />
       </Routes>
       <Footer data={footer} />
     </div>

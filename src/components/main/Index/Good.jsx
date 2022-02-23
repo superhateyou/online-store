@@ -14,7 +14,7 @@ export const Good = ({ data }) => {
         <div className="good__content">
           <a href={data && data.link} className="good__link">
             <img
-              src={data && data.imgLink}
+              src={data && data.imgLink[0]}
               alt={data && data.imgAlt}
               className="good__img"
               title=""

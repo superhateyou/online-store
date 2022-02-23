@@ -3,11 +3,20 @@
     {
       "link": "!#",
       "id": "faeba6cxzecce",
-      "imgLink": "assets/images/good-1.jpg",
+      "imgLink": [
+        "assets/images/good-1.jpg",
+        "https://images.pexels.com/photos/146083/pexels-photo-146083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/4588065/pexels-photo-4588065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/567540/pexels-photo-567540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/689784/pexels-photo-689784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
       "imgAlt": "Товар",
       "type": "new",
       "name": "Шапка-бини для новорожденных Hilal",
       "price": "1 599 р",
+      "priceOld": "1 999 р",
+      "discount": 20,
+      "composition": ["50% Шерсть", "50% Акрил"],
       "sizes": [
         { "size": 74, "isStock": true },
         { "size": 80, "isStock": true },
@@ -19,7 +28,7 @@
     {
       "link": "!#",
       "id": "faebafdsfdsce",
-      "imgLink": "assets/images/good-1.jpg",
+      "imgLink": ["assets/images/good-1.jpg"],
       "imgAlt": "Товар",
       "type": "sale",
       "name": "Шапка-бини для новорожденных Hilal",
@@ -35,7 +44,7 @@
     {
       "link": "!#",
       "id": "faefdsfsce",
-      "imgLink": "assets/images/good-1.jpg",
+      "imgLink": ["assets/images/good-1.jpg"],
       "imgAlt": "Товар",
       "type": "",
       "name": "Шапка-бини для новорожденных Hilal",
