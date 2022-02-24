@@ -1,5 +1,6 @@
 import { CardRow } from "./CardRow"
 import { Gallery } from "./Gallery"
+import { ProductPrice } from "./ProductPrice"
 
 export const CardTop = ({ data }) => {
   return (
@@ -12,10 +13,7 @@ export const CardTop = ({ data }) => {
           <div className="card__id text">{data && data.id}</div>
         </header>
         <div className="card__content-block">
-          <div className="card__content-row">
-            <div className="card__price card__price_new">{data && data.price}.</div>
-            <div className="card__price card__price_old">{data && data.priceOld}</div>
-          </div>
+          <ProductPrice discount={data && data.discount} price={data && data.price} />
           <div className="card__discount text">Скидка: {data && data.discount}</div>
         </div>
         <div className="card__content-block">
