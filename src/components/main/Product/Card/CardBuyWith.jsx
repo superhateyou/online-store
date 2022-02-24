@@ -1,10 +1,10 @@
 import { Good } from "../../Index/Good"
 
-export const CardRecs = ({ data }) => {
+export const CardBuyWith = ({ data }) => {
   return (
     <article className="product-page__section">
       <h2 className="heading product-page__title">
-        <span className="heading__text">Рекомендуем</span>
+        <span className="heading__text">С этим товаром покупают</span>
       </h2>
       <ul className="goods product-page__goods">
         {data?.map(el => (<Good data={el} key={el.id} />))}
