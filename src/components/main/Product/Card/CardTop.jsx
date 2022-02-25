@@ -3,6 +3,7 @@ import { Gallery } from "./Gallery"
 import { ProductPrice } from "./ProductPrice"
 
 export const CardTop = ({ data }) => {
+  console.log(data)
   return (
     <div className="card__top">
       <Gallery data={data && data.imgLink} />

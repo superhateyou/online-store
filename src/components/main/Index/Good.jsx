@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { GoodSizes } from "./GoodSizes"
 
 export const Good = ({ data }) => {
@@ -12,7 +13,7 @@ export const Good = ({ data }) => {
     <li className="goods__item" >
       <article className="good">
         <div className="good__content">
-          <a href={data && data.link} className="good__link">
+          <Link to={data && data.id} className="good__link">
             <img
               src={data && data.imgLink[0]}
               alt={data && data.imgAlt}
@@ -20,7 +21,7 @@ export const Good = ({ data }) => {
               title=""
             />
             {typeSpan}
-          </a>
+          </Link>
           <a href="!#" className="like">
             Мне нравится
           </a>

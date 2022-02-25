@@ -2,7 +2,7 @@
   "goodsList": [
     {
       "link": "!#",
-      "id": "faeba6cxzecce",
+      "id": "faeba6cxzecce123",
       "imgLink": [
         "assets/images/good-1.jpg",
         "https://images.pexels.com/photos/146083/pexels-photo-146083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -12,6 +12,7 @@
       ],
       "imgAlt": "Товар",
       "type": "new",
+      "category": "Головные уборы",
       "name": "Шапка-бини для новорожденных Hilal",
       "price": 1999,
       "discount": 20,
@@ -73,34 +74,146 @@
     },
     {
       "link": "!#",
-      "id": "faebafdsfdsce",
-      "imgLink": ["assets/images/good-1.jpg"],
+      "id": "faeba6cxzecce213",
+      "imgLink": [
+        "assets/images/good-1.jpg",
+        "https://images.pexels.com/photos/146083/pexels-photo-146083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/4588065/pexels-photo-4588065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/567540/pexels-photo-567540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/689784/pexels-photo-689784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
       "imgAlt": "Товар",
       "type": "sale",
+      "category": "Головные уборы",
       "name": "Шапка-бини для новорожденных Hilal",
-      "price": "999 р",
+      "price": 1,
+      "discount": 20,
+      "composition": ["50% Шерсть", "50% Акрил"],
+      "care": "Главное, не давайте носить ее вашему папе, а то она растянется и потеряет вид!",
       "sizes": [
-        { "size": 74, "isStock": false },
+        { "size": 74, "isStock": true },
         { "size": 80, "isStock": true },
         { "size": 86, "isStock": false },
-        { "size": 92, "isStock": false },
+        { "size": 92, "isStock": true },
         { "size": 98, "isStock": false }
+      ],
+      "description": {
+        "text": "Как насчет сна? Эта удобная шапочка идеально подходит для всех маленьких мечтателей и сонных медведей! Благодаря вязке из теплой шерстяной смеси в сочетании с мягкой флисовой подкладкой на внутренней стороне, эта шапочка подходит для ежедневного использования. Сочетание с варежками Nyytti и пинетками Neuvo завершит образ!",
+        "list": [
+          "Детская шапочка, теплая шерстяная вязка",
+          "Мягкая теплая подкладка из флиса",
+          "Ветронепроницаемые вставки в области ушей",
+          "Сочетается в варежками “Nyytti” и пинетками “Neuvo”"
+        ]
+      },
+      "comments": [
+        {
+          "name": "Наталья",
+          "comment": "Отличная одежда для активного отдыха и игр на улице.",
+          "date": "2015-03-15T21:07",
+          "dateText": "15.03.2015 в 21:07",
+          "stars": 1
+        },
+        {
+          "name": "Роберт",
+          "comment": "Очень теплая и качественная одежда. Рекомендую!",
+          "date": "2014-01-18T10:12",
+          "dateText": "18.01.2014 в 10:12",
+          "stars": 2
+        },
+        {
+          "name": "Илья",
+          "comment": "10/10.",
+          "date": "15.04.2077-04-15T21:07",
+          "dateText": "15.04.2077 в 21:07",
+          "stars": 3
+        },
+        {
+          "name": "Анна",
+          "comment": "Качество на высоте",
+          "date": "15.03.2019-03-15T21:07",
+          "dateText": "15.03.2019 в 21:07",
+          "stars": 4
+        },
+        {
+          "name": "Женя",
+          "comment": "Плохо",
+          "date": "15.03.2019-03-15T21:07",
+          "dateText": "15.03.2019 в 21:07",
+          "stars": 5
+        }
       ]
     },
     {
       "link": "!#",
-      "id": "faefdsfsce",
-      "imgLink": ["assets/images/good-1.jpg"],
+      "id": "faeba6cxzecce354",
+      "imgLink": [
+        "assets/images/good-1.jpg",
+        "https://images.pexels.com/photos/146083/pexels-photo-146083.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/4588065/pexels-photo-4588065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/567540/pexels-photo-567540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "https://images.pexels.com/photos/689784/pexels-photo-689784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      ],
       "imgAlt": "Товар",
       "type": "",
+      "category": "Головные уборы",
       "name": "Шапка-бини для новорожденных Hilal",
-      "price": "1 299 р",
+      "price": 1999999,
+      "discount": 20,
+      "composition": ["50% Шерсть", "50% Акрил"],
+      "care": "Главное, не давайте носить ее вашему папе, а то она растянется и потеряет вид!",
       "sizes": [
-        { "size": 74, "isStock": false },
+        { "size": 74, "isStock": true },
         { "size": 80, "isStock": true },
-        { "size": 86, "isStock": true },
+        { "size": 86, "isStock": false },
         { "size": 92, "isStock": true },
-        { "size": 98, "isStock": true }
+        { "size": 98, "isStock": false }
+      ],
+      "description": {
+        "text": "Как насчет сна? Эта удобная шапочка идеально подходит для всех маленьких мечтателей и сонных медведей! Благодаря вязке из теплой шерстяной смеси в сочетании с мягкой флисовой подкладкой на внутренней стороне, эта шапочка подходит для ежедневного использования. Сочетание с варежками Nyytti и пинетками Neuvo завершит образ!",
+        "list": [
+          "Детская шапочка, теплая шерстяная вязка",
+          "Мягкая теплая подкладка из флиса",
+          "Ветронепроницаемые вставки в области ушей",
+          "Сочетается в варежками “Nyytti” и пинетками “Neuvo”"
+        ]
+      },
+      "comments": [
+        {
+          "name": "Наталья",
+          "comment": "Отличная одежда для активного отдыха и игр на улице.",
+          "date": "2015-03-15T21:07",
+          "dateText": "15.03.2015 в 21:07",
+          "stars": 1
+        },
+        {
+          "name": "Роберт",
+          "comment": "Очень теплая и качественная одежда. Рекомендую!",
+          "date": "2014-01-18T10:12",
+          "dateText": "18.01.2014 в 10:12",
+          "stars": 2
+        },
+        {
+          "name": "Илья",
+          "comment": "10/10.",
+          "date": "15.04.2077-04-15T21:07",
+          "dateText": "15.04.2077 в 21:07",
+          "stars": 3
+        },
+        {
+          "name": "Анна",
+          "comment": "Качество на высоте",
+          "date": "15.03.2019-03-15T21:07",
+          "dateText": "15.03.2019 в 21:07",
+          "stars": 4
+        },
+        {
+          "name": "Женя",
+          "comment": "Плохо",
+          "date": "15.03.2019-03-15T21:07",
+          "dateText": "15.03.2019 в 21:07",
+          "stars": 5
+        }
       ]
     }
   ]
