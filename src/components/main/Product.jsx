@@ -27,9 +27,9 @@ export const Product = () => {
           <CardTabs data={good && good} />
         </div>
       </div>
-      {/* <CardBuyWith data={good && good} />
-      <CardRecs data={good && good} />
-      <CardPopUp data={good && good} /> */}
+      <CardBuyWith />
+      <CardRecs />
+      <CardPopUp data={good && good} />
     </main>
   )
 }
