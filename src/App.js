@@ -18,15 +18,11 @@ import { Product } from './components/main/Product';
 // }
 
 function App() {
-  const [header, setHeader] = useState({})
   const [footer, setFooter] = useState({})
   const [main, setMain] = useState({})
   const [goods, setGoods] = useState({})
 
   useEffect(() => {
-    axios.get('/header.json')
-      .then(res => setHeader(res.data))
-      .catch(err => console.log(err))
     axios.get('/footer.json')
       .then(res => setFooter(res.data))
       .catch(err => console.log(err))
@@ -40,12 +36,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header data={header} />
+      <Header />
       <Routes>
-        <Route path="/" element={<Index data={main} goods={goods} />} />
-        <Route path="/product" element={<Product data={goods.goodsList} />} />
+        <Route path="/" element={<div>main</div>} />
+        <Route path="/catalog/*" element={<Index />} />
+        <Route path="/catalog/:id" element={<Product />} />
       </Routes>
-      <Footer data={footer} />
+      <Footer />
     </div>
   );
 }

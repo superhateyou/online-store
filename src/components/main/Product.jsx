@@ -1,26 +1,35 @@
+import axios from 'axios';
+import { useEffect, useState } from 'react'
 import { Breadcrumbs } from "./Product/Breadcrumbs"
 import { CardTabs } from "./Product/Card/CardTabs"
 import { CardTop } from './Product/Card/CardTop'
 import { CardRecs } from './Product/Card/CardRecs'
 import { CardBuyWith } from "./Product/Card/CardBuyWith"
 import { CardPopUp } from "./Product/Card/CardPopUp"
-import { useLocation } from "react-router"
+import { useParams } from "react-router"
 
-export const Product = ({ data }) => {
-  const location = useLocation()
-  console.log(location.pathname.split("/")[2])
+export const Product = () => {
+  const match = useParams()
+  const [good, setGood] = useState(undefined)
+  useEffect(() => {
+    axios.get("/goods.json")
+      .then(res => setGood(res.data.find(item => item.id === match.id)))
+      .catch(err => console.log(err))
+  }, [match.id])
+
+  console.log("slug", good)
   return (
     <main className="content product-page">
       <div className="container">
         <Breadcrumbs />
         <div className="card product-page__card">
-          <CardTop data={data && data.find(item => item.id === location.pathname.split("/")[2])} />
-          <CardTabs data={data && data.find(item => item.id === location.pathname.split("/")[2])} />
+          <CardTop data={good && good} />
+          <CardTabs data={good && good} />
         </div>
       </div>
-      {/* <CardBuyWith data={data && data} />
-      <CardRecs data={data && data} />
-      <CardPopUp data={data && data.find(item => item.id === "faeba6cxzecce")} /> */}
+      {/* <CardBuyWith data={good && good} />
+      <CardRecs data={good && good} />
+      <CardPopUp data={good && good} /> */}
     </main>
   )
 }

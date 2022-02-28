@@ -19,7 +19,7 @@ export const CardTop = ({ data }) => {
         </div>
         <div className="card__content-block">
           <div className="card__subtitle text">Материал:</div>
-          {data && data.composition.map(el => <div className="text">{el}</div>)}
+          {data ? data.composition.map(el => <div className="text">{el}</div>) : undefined}
         </div>
         <form method="post" action="" className="form">
           <div className="card__content-block">
