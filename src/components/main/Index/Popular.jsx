@@ -11,8 +11,6 @@ export const Popular = () => {
       .catch(err => console.log(err))
   }, [])
 
-  console.log(goods)
-
   return (
     <section className="popular">
       <div className="container">

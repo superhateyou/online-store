@@ -8,12 +8,11 @@ export const DropdownItem = ({ data }) => {
       </div>
       <div className="dropdown-menu__menu-col">
         <ul className="vertical-menu">
-          {data.ddItems.map(el => (
-            <VertMenuItem key={el.id} data={el} />
+          {data.ddItems.list.map(el => (
+            <VertMenuItem key={el.id} data={el.list} />
           ))}
         </ul>
       </div>
     </li>
-    // <div>1</div>
   )
 }
