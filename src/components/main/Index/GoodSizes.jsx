@@ -1,7 +1,7 @@
 export const GoodSizes = ({ data, id }) => {
   if (data.isStock === true) {
     return (
-      <div className="checkbox-tile" key={`${data.id}${data.size}`}>
+      <div className="checkbox-tile" key={`${data.id}${id}`}>
         <input
           id={`${data.id}-size${data.size}`}
           name={`${data.id}[${data.size}]`}

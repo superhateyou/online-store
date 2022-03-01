@@ -35,7 +35,7 @@ export const Good = ({ data }) => {
             <div className="good__order-row">
               <label className="good__order-label">Выберите размер</label>
               {data && data.sizes.map((el, i) => (
-                <GoodSizes key={`${data.id}${el}`} data={el} id={data.id} />
+                <GoodSizes key={`${data.id}${i}`} data={el} id={data.id} />
               ))}
             </div>
             <div className="good__order-row">
