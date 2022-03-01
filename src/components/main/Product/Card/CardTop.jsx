@@ -6,7 +6,7 @@ export const CardTop = ({ data }) => {
   console.log(data)
   return (
     <div className="card__top">
-      <Gallery data={data && data.imgLink} />
+      <Gallery data={data && data.imgLink} id={data && data.id} />
       <div className="card__info">
         <header className="card__info-header">
           <span className="flag flag_type_new">{data && data.type}</span>
@@ -19,14 +19,14 @@ export const CardTop = ({ data }) => {
         </div>
         <div className="card__content-block">
           <div className="card__subtitle text">Материал:</div>
-          {data ? data.composition.map(el => <div className="text">{el}</div>) : undefined}
+          {data ? data.composition.map((el, i) => <div key={`composition_${data && data.id}_${i}`} className="text">{el}</div>) : undefined}
         </div>
         <form method="post" action="" className="form">
           <div className="card__content-block">
             <div className="card__subtitle text">Выберите размер:</div>
             <div className="card__content-row card__content-row_checkboxes">
               <div className="checkbox-tile checkbox-tile_size_extra">
-                {data && data.sizes.map((el, i) => (<CardRow data={el} index={i} />))}
+                {data && data.sizes.map((el, i) => (<CardRow data={el} index={i} key={`size_${data && data.id}_${i}`} />))}
               </div>
             </div>
             <a href="!#" className="link text">

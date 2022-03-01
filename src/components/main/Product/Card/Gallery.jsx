@@ -1,4 +1,4 @@
-export const Gallery = ({ data }) => {
+export const Gallery = ({ data, id }) => {
   return (
     <div className="card__photos gallery">
       <div className="gallery__display">
@@ -19,8 +19,8 @@ export const Gallery = ({ data }) => {
               className="gallery__thumbnails-img"
             />
           </li>
-          {data && data.slice(1, data.length - 1).map(el => (
-            <li className="gallery__thumbnails-item">
+          {data && data.slice(1, data.length - 1).map((el, i) => (
+            <li key={id + i} className="gallery__thumbnails-item">
               <img
                 src={el}
                 alt=""

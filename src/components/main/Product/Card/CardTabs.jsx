@@ -34,8 +34,8 @@ export const CardTabs = ({ data }) => {
             </p>
           </div>
           <ul className="list list_markers">
-            {data && data.description.list.map(el => (
-              <li className="list__item list__item_marker_orange text">
+            {data && data.description.list.map((el, i) => (
+              <li key={`description_${data && data.id}_${i}`} className="list__item list__item_marker_orange text">
                 {el}
               </li>
             ))}
@@ -43,8 +43,8 @@ export const CardTabs = ({ data }) => {
         </div>
         <div data-tab={2} className="tabs__content">
           <ul className="list list_markers">
-            {data && data.composition.map(el => (
-              <li className="list__item list__item_marker_orange text">
+            {data && data.composition.map((el, i) => (
+              <li key={`composition_${data && data.id}_${i}`} className="list__item list__item_marker_orange text">
                 {el}
               </li>
             ))}
@@ -58,10 +58,11 @@ export const CardTabs = ({ data }) => {
         <div data-tab={4} className="tabs__content">
           <div className="reviews">
             <div className="reviews__other">
-              {data && data.comments.map(el => (
-                <article className="review reviews__item">
+              {data && data.comments.map((el, i) => (
+                <article key={`comment_${data && data.id}_${i}`}
+                  className="review reviews__item">
                   <div className="raiting review__raiting">
-                    <CommentStars data={el.stars} />
+                    <CommentStars data={el.stars} id={data && data.id} />
                   </div>
                   <div className="review__message">
                     <p className="text">
@@ -83,6 +84,6 @@ export const CardTabs = ({ data }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   )
 }
