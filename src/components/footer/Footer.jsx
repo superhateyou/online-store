@@ -12,7 +12,6 @@ export const Footer = ({ data }) => {
     axios.get('/footer.json')
       .then(res => setFooter(res.data))
       .catch(err => console.log(err))
-    console.log(111)
   }, [])
 
   return (

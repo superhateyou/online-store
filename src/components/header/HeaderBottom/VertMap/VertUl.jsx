@@ -1,18 +1,15 @@
 export const VertUl = ({ data }) => {
+  console.log("vert", data)
   return (
     <ul className="vertical-menu__submenu">
-      <li className="vertical-menu__submenu-item">
-        <a href="!#"
-          className="link vertical-menu__submenu-name">
-          Демисезонные
-        </a>
-      </li>
-      <li className="vertical-menu__submenu-item">
-        <a href="!#"
-          className="link vertical-menu__submenu-name">
-          Для новорождённых
-        </a>
-      </li>
+      {data && data.list.map(el => (
+        <li className="vertical-menu__submenu-item" key={el.id}>
+          <a href={el.link}
+            className="link vertical-menu__submenu-name">
+            {el.title}
+          </a>
+        </li>
+      ))}
     </ul>
   )
 }
