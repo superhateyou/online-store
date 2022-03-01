@@ -1,5 +1,4 @@
 export const VertUl = ({ data }) => {
-  console.log("vert", data)
   return (
     <ul className="vertical-menu__submenu">
       {data && data.list.map(el => (
