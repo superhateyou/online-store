@@ -7,7 +7,6 @@ export const Breadcrumbs = () => {
   const [currentProduct, setCurrentProduct] = useState(undefined)
   const paths = useLocation().pathname.slice(1);
   const particles = paths.split("/")
-  console.log(particles)
 
   useEffect(() => {
     axios.get("/goods.json")
@@ -25,8 +24,8 @@ export const Breadcrumbs = () => {
             Главная
           </Link>
         </li>
-        {currentProduct.category.map(category => (
-          <li className="breadcrumbs__item">
+        {currentProduct.category.map((category, i) => (
+          <li className="breadcrumbs__item" key={`breadcrumb_${i}`}>
             <Link to="!#" className="breadcrumbs__name">
               {category}
             </Link>
