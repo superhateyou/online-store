@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 
 export const Breadcrumbs = () => {
   const [currentProduct, setCurrentProduct] = useState(undefined)
-  const paths = useLocation().pathname.slice(1);
-  const particles = paths.split("/")
+  const paths = useLocation();
+  const particles = paths.pathname.slice(1).split("/")
+  const itemUrl = particles[1]
 
   useEffect(() => {
     axios.get("/goods.json")
-      .then(res => setCurrentProduct(res.data.find(item => item.id === particles[1])))
+      .then(res => setCurrentProduct(res.data.find(item => item.id === itemUrl)))
       .catch(err => console.log(err))
-  }, [])
+  }, [itemUrl])
 
-  console.log(currentProduct)
   if (particles.length === 2 && currentProduct !== undefined) {
     document.title = `LASSIE - ${currentProduct.name}`
     return (
