@@ -9,6 +9,7 @@ import { CardPopUp } from "./Product/Card/CardPopUp"
 import { useParams } from "react-router"
 
 export const Product = () => {
+  document.title = "product"
   const match = useParams()
   const [good, setGood] = useState(undefined)
   useEffect(() => {
@@ -17,7 +18,6 @@ export const Product = () => {
       .catch(err => console.log(err))
   }, [match.id])
 
-  console.log("slug", good)
   return (
     <main className="content product-page">
       <div className="container">
