@@ -4,6 +4,7 @@ import { Footer } from './components/footer/Footer';
 import { Index } from './components/main/Index'
 import { Product } from './components/main/Product';
 import { Breadcrumbs } from './components/main/Product/Breadcrumbs';
+import { Catalog } from './components/main/Catalog';
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <Breadcrumbs />
         <Routes>
           <Route path="/" element={<div>main</div>} />
-          <Route path="/catalog/*" element={<Index />} />
-          <Route path="/catalog/:id" element={<Product />} />
+          <Route path="/catalog/*" element={<Catalog />} />
+          <Route path="/index/*" element={<Index />} />
+          <Route path="/index/:id" element={<Product />} />
         </Routes>
       </main>
       <Footer />
