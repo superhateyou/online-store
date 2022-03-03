@@ -9,11 +9,25 @@ export const Breadcrumbs = () => {
   const particles = paths.pathname.slice(1).split("/")
   const itemUrl = particles[1]
 
+  console.log(paths)
+
   useEffect(() => {
     axios.get("/goods.json")
       .then(res => setCurrentProduct(res.data.find(item => item.id === itemUrl)))
       .catch(err => console.log(err))
-  }, [itemUrl])
+    switch (paths.pathname) {
+      case "/":
+        document.title = "LASSIE - Главная"
+        break;
+      case "/catalog":
+        document.title = "LASSIE - Каталог"
+        break;
+      default:
+        break
+    }
+  }, [itemUrl, paths])
+
+  console.log(currentProduct)
 
   if (particles.length === 2 && currentProduct !== undefined) {
     document.title = `LASSIE - ${currentProduct.name}`
