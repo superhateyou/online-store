@@ -27,7 +27,7 @@ export const Good = ({ data }) => {
           </a>
           <h4 className="good__name">{data && data.name}</h4>
           <div className="good__price-wrapper">
-            <span className="good__price">{data && data.price}.</span>
+            <span className="good__price">{data && data.price} р.</span>
           </div>
         </div>
         <div className="good__hover">
