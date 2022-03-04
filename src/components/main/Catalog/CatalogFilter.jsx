@@ -4,6 +4,7 @@ import { ColorFilter } from "./ColorFilter"
 import { GenderFilter } from "./GenderFilter"
 import { SizesFilter } from "./SizesFilter"
 import { AvailabilityFilter } from "./AvailabilityFilter"
+import { PriceFilter } from "./PriceFilter"
 
 export const CatalogFilter = ({ data }) => {
   return (
@@ -21,28 +22,7 @@ export const CatalogFilter = ({ data }) => {
         <GenderFilter data={data && data} />
         <SizesFilter data={data && data} />
         <AvailabilityFilter />
-        <div className="form__row form__row_direction_column">
-          <label className="form__label">Цена, руб.</label>
-          <div className="range-slider">
-            <input className="range-slider__elem" type="text" />
-            <div className="range-slider__output-row">
-              <input
-                name="Filter[price-min]"
-                data-type="min"
-                readOnly=""
-                className="input range-slider__output"
-                type="text"
-              />
-              <input
-                name="Filter[price-max]"
-                data-type="max"
-                readOnly=""
-                className="input range-slider__output"
-                type="text"
-              />
-            </div>
-          </div>
-        </div>
+        <PriceFilter data={data && data} />
         <button type="submit" className="btn">
           Показать товары
         </button>
