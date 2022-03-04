@@ -23,11 +23,11 @@
     "composition": ["50% Шерсть", "50% Акрил"],
     "care": "Главное, не давайте носить ее вашему папе, а то она растянется и потеряет вид!",
     "sizes": [
-      { "size": 74, "isStock": true },
-      { "size": 80, "isStock": true },
-      { "size": 86, "isStock": false },
-      { "size": 92, "isStock": true },
-      { "size": 98, "isStock": false }
+      { "size": 74, "isStock": true, "onOrder": true },
+      { "size": 80, "isStock": true, "onOrder": false },
+      { "size": 86, "isStock": false, "onOrder": true },
+      { "size": 92, "isStock": true, "onOrder": true },
+      { "size": 98, "isStock": false, "onOrder": false }
     ],
     "description": {
       "text": "Как насчет сна? Эта удобная шапочка идеально подходит для всех маленьких мечтателей и сонных медведей! Благодаря вязке из теплой шерстяной смеси в сочетании с мягкой флисовой подкладкой на внутренней стороне, эта шапочка подходит для ежедневного использования. Сочетание с варежками Nyytti и пинетками Neuvo завершит образ!",
@@ -100,11 +100,11 @@
     "composition": ["50% Шерсть", "50% Акрил"],
     "care": "Главное, не давайте носить ее вашему папе, а то она растянется и потеряет вид!",
     "sizes": [
-      { "size": 74, "isStock": true },
-      { "size": 80, "isStock": true },
-      { "size": 86, "isStock": false },
-      { "size": 92, "isStock": true },
-      { "size": 98, "isStock": false }
+      { "size": 74, "isStock": true, "onOrder": false },
+      { "size": 80, "isStock": true, "onOrder": true },
+      { "size": 86, "isStock": false, "onOrder": true },
+      { "size": 92, "isStock": true, "onOrder": true },
+      { "size": 98, "isStock": false, "onOrder": false }
     ],
     "description": {
       "text": "Как насчет сна? Эта удобная шапочка идеально подходит для всех маленьких мечтателей и сонных медведей! Благодаря вязке из теплой шерстяной смеси в сочетании с мягкой флисовой подкладкой на внутренней стороне, эта шапочка подходит для ежедневного использования. Сочетание с варежками Nyytti и пинетками Neuvo завершит образ!",
@@ -177,11 +177,11 @@
     "composition": ["50% Шерсть", "50% Акрил"],
     "care": "Главное, не давайте носить ее вашему папе, а то она растянется и потеряет вид!",
     "sizes": [
-      { "size": 74, "isStock": true },
-      { "size": 80, "isStock": true },
-      { "size": 86, "isStock": false },
-      { "size": 92, "isStock": true },
-      { "size": 98, "isStock": false }
+      { "size": 74, "isStock": true, "onOrder": true },
+      { "size": 80, "isStock": true, "onOrder": true },
+      { "size": 86, "isStock": false, "onOrder": false },
+      { "size": 92, "isStock": true, "onOrder": false },
+      { "size": 98, "isStock": false, "onOrder": true }
     ],
     "description": {
       "text": "Как насчет сна? Эта удобная шапочка идеально подходит для всех маленьких мечтателей и сонных медведей! Благодаря вязке из теплой шерстяной смеси в сочетании с мягкой флисовой подкладкой на внутренней стороне, эта шапочка подходит для ежедневного использования. Сочетание с варежками Nyytti и пинетками Neuvo завершит образ!",
