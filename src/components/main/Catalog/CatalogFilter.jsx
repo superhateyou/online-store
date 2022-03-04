@@ -2,6 +2,7 @@ import { CollectionFilter } from "./CollectionFilter"
 import { SeasonFilter } from "./SeasonFilter"
 import { ColorFilter } from "./ColorFilter"
 import { GenderFilter } from "./GenderFilter"
+import { SizesFilter } from "./SizesFilter"
 
 export const CatalogFilter = ({ data }) => {
   return (
@@ -17,119 +18,7 @@ export const CatalogFilter = ({ data }) => {
         <CollectionFilter data={data && data} />
         <ColorFilter data={data && data} />
         <GenderFilter data={data && data} />
-        <div className="form__row form__row_direction_column">
-          <label className="form__label">Размер</label>
-          <div className="form__content-group">
-            <div className="checkbox-tile checkbox-tile_size_big">
-              <input
-                id="filter-size-1"
-                name="Filter[size]"
-                type="checkbox"
-                defaultValue={50}
-                className="checkbox-tile__elem"
-              />
-              <label htmlFor="filter-size-1" className="checkbox-tile__label">
-                50
-              </label>
-            </div>
-            <div className="checkbox-tile checkbox-tile_size_big">
-              <input
-                id="filter-size-2"
-                name="Filter[size]"
-                type="checkbox"
-                defaultValue={56}
-                className="checkbox-tile__elem"
-              />
-              <label htmlFor="filter-size-2" className="checkbox-tile__label">
-                56
-              </label>
-            </div>
-            <div className="checkbox-tile checkbox-tile_size_big">
-              <input
-                id="filter-size-3"
-                name="Filter[size]"
-                type="checkbox"
-                defaultValue={62}
-                className="checkbox-tile__elem"
-              />
-              <label htmlFor="filter-size-3" className="checkbox-tile__label">
-                62
-              </label>
-            </div>
-            <div className="checkbox-tile checkbox-tile_size_big">
-              <input
-                id="filter-size-4"
-                name="Filter[size]"
-                type="checkbox"
-                defaultValue={68}
-                className="checkbox-tile__elem"
-              />
-              <label htmlFor="filter-size-4" className="checkbox-tile__label">
-                68
-              </label>
-            </div>
-            <div className="checkbox-tile checkbox-tile_size_big">
-              <input
-                id="filter-size-5"
-                name="Filter[size]"
-                type="checkbox"
-                defaultValue={74}
-                className="checkbox-tile__elem"
-              />
-              <label htmlFor="filter-size-5" className="checkbox-tile__label">
-                74
-              </label>
-            </div>
-            <div className="checkbox-tile checkbox-tile_size_big">
-              <input
-                id="filter-size-6"
-                name="Filter[size]"
-                type="checkbox"
-                defaultValue={80}
-                className="checkbox-tile__elem"
-              />
-              <label htmlFor="filter-size-6" className="checkbox-tile__label">
-                80
-              </label>
-            </div>
-            <div className="checkbox-tile checkbox-tile_size_big">
-              <input
-                id="filter-size-7"
-                name="Filter[size]"
-                type="checkbox"
-                defaultValue={86}
-                className="checkbox-tile__elem"
-              />
-              <label htmlFor="filter-size-7" className="checkbox-tile__label">
-                86
-              </label>
-            </div>
-            <div className="checkbox-tile checkbox-tile_size_big">
-              <input
-                id="filter-size-8"
-                name="Filter[size]"
-                type="checkbox"
-                defaultValue={92}
-                className="checkbox-tile__elem"
-              />
-              <label htmlFor="filter-size-8" className="checkbox-tile__label">
-                92
-              </label>
-            </div>
-            <div className="checkbox-tile checkbox-tile_size_big">
-              <input
-                id="filter-size-9"
-                name="Filter[size]"
-                type="checkbox"
-                defaultValue={98}
-                className="checkbox-tile__elem"
-              />
-              <label htmlFor="filter-size-9" className="checkbox-tile__label">
-                98
-              </label>
-            </div>
-          </div>
-        </div>
+        <SizesFilter data={data && data} />
         <div className="form__row form__row_direction_column">
           <label className="form__label">Наличие</label>
           <div className="checkbox">
