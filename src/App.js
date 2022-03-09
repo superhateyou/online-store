@@ -5,6 +5,7 @@ import { Index } from './components/main/Index'
 import { Product } from './components/main/Product';
 import { Breadcrumbs } from './components/main/Product/Breadcrumbs';
 import { Catalog } from './components/main/Catalog';
+import { Order } from './components/main/Order';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<div>main</div>} />
           <Route path="/catalog/*" element={<Catalog />} />
           <Route path="/index/*" element={<Index />} />
+          <Route path="/order/*" element={<Order />} />
           <Route path="/index/:id" element={<Product />} />
         </Routes>
       </main>

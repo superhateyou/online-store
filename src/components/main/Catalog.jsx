@@ -2,8 +2,6 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { CatalogFilter } from "./Catalog/CatalogFilter";
 import { CatalogMain } from './Catalog/CatalogMain';
-import { Good } from "./Index/Good";
-
 
 export const Catalog = () => {
   const h1Title = "Головные уборы"
