@@ -1,0 +1,110 @@
+{
+  "info": [
+    {
+      "id": "order-name",
+      "name": "Order[name]",
+      "title": "Фамилия, имя, отчество",
+      "inputClass": "form__col_width_375",
+      "type": "text"
+    },
+    {
+      "id": "order-mail",
+      "name": "Order[mail]",
+      "title": "Электронная почта",
+      "inputClass": "form__col_width_260",
+      "type": "email",
+      "formInfo": "Мы не рассылаем спам и не передаем информацию третьим лицам"
+    },
+    {
+      "id": "order-phone",
+      "name": "Order[phone]",
+      "title": "Контактный телефон",
+      "inputClass": "form__col_width_260",
+      "type": "tel",
+      "formInfo": "Необходим для подтверждения заказа",
+      "hint": "Например, 9051234567"
+    },
+    {
+      "id": "order-city",
+      "name": "Order[city]",
+      "title": "Город",
+      "inputClass": "form__col_width_220",
+      "type": "text"
+    },
+    {
+      "id": "order-postcode",
+      "name": "Order[postcode]",
+      "title": "Почтовый индекс",
+      "inputClass": "form__col_width_260",
+      "type": "text"
+    },
+    {
+      "id": "order-house",
+      "name": "Order[house]",
+      "title": "Номер дома",
+      "inputClass": "form__col_width_90",
+      "type": "text"
+    },
+    {
+      "id": "order-houseing",
+      "name": "Order[houseing]",
+      "title": "Корпус",
+      "inputClass": "form__col_width_90",
+      "type": "text"
+    },
+    {
+      "id": "order-apartment",
+      "name": "Order[apartment]",
+      "title": "Номер квартиры",
+      "inputClass": "form__col_width_90",
+      "type": "text"
+    }
+  ],
+  "order": [
+    {
+      "id": "expressDelivery",
+      "deliveryLabel": "Курьерская доставка",
+      "deliveryInfo": "от 3 до 10 рабочих дней с момента отправки посылки",
+      "fields": [
+        {
+          "id": "order-delivery-1",
+          "name": "Order[delivery]",
+          "title": "DHL",
+          "price": 385
+        },
+        {
+          "id": "order-delivery-2",
+          "name": "Order[delivery]",
+          "title": "DPD",
+          "price": 355
+        }
+      ]
+    },
+    {
+      "id": "postDelivery",
+      "deliveryLabel": "Почтовое отправление",
+      "fields": [
+        {
+          "id": "order-delivery-3",
+          "name": "Order[delivery]",
+          "title": "Почта России",
+          "price": 200
+        }
+      ]
+    }
+  ],
+  "payment": [
+    {
+      "id": "order-payment-1",
+      "name": "Order[payment]",
+      "title": "Наличными курьеру",
+      "type": "cash"
+    },
+    {
+      "id": "order-payment-2",
+      "name": "Order[payment]",
+      "title": "Электронные платежи",
+      "type": "e-money"
+    }
+  ]
+}
