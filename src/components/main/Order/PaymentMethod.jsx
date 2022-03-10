@@ -1,17 +1,38 @@
-export const PaymentMenthod = ({ data }) => {
+import { useState } from "react"
+
+export const PaymentMenthod = ({ data, handler }) => {
+  const [inputState, setInputState] = useState('')
+
+  const inputHandler = (e) => {
+    setInputState(e.target.value)
+  }
+
+  const blurHandler = () => {
+    let state = { value: inputState, id: "order-payment" }
+    handler(state)
+  }
+
   return (
-    <div className="radio">
-      <input
-        id={data.id}
-        name={data.name}
-        type="radio"
-        defaultValue={data.type}
-        required=""
-        className="radio__elem"
-      />
-      <label htmlFor={data.id} className="form__label radio__label">
-        {data.title}
-      </label>
-    </div>
+    <fieldset className="form__fieldset">
+      {data?.label ? <legend className="form__title">{data.label}</legend> : null}
+      {data?.fields?.map(el => (
+        <div className="radio" key={el.id}>
+          <input
+            id={el.id}
+            name={el.name}
+            type="radio"
+            required=""
+            value={el.type}
+            className="radio__elem"
+            checked={inputState === el.type ? true : false}
+            onBlur={e => blurHandler()}
+            onChange={e => inputHandler(e)}
+          />
+          <label htmlFor={el.id} className="form__label radio__label">
+            {el.title}
+          </label>
+        </div>
+      ))}
+    </fieldset>
   )
 }

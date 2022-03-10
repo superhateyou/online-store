@@ -5,6 +5,7 @@ import { CustomerInfo } from './Order/СustomerInfo';
 import { PaymentMenthod } from './Order/PaymentMethod';
 
 export const Order = () => {
+  const [order, setOrder] = useState({})
   const [inputs, setInputs] = useState(undefined)
 
   useEffect(() => {
@@ -13,32 +14,19 @@ export const Order = () => {
       .catch(err => console.log(err))
   }, [])
 
-  console.log(inputs)
+  const changeHandler = (inputState) => {  //main handler
+    setOrder({ ...order, [inputState.id]: inputState.value || inputState.checked })
+  }
+
+  console.log(order)
 
   return (
     <div className="container">
       <h1 className="title">Оформление заказа</h1>
       <form className="form js-form-validate order-page__form">
-        <fieldset className="form__fieldset">
-          {inputs?.info.label ? <legend className="form__title">{inputs.info.label}</legend> : null}
-          {inputs?.info?.fields?.map(el => <CustomerInfo data={el} key={el.id} />)}
-        </fieldset>
-        <fieldset className="form__fieldset">
-          {inputs?.order.label ? <legend className="form__title">{inputs.order.label}</legend> : null}
-          {inputs?.order.columns?.map(el => (
-            <div key={el.id}>
-              {el.label ? <label className="form__label">{el.label}</label> : null}
-              {el.info ? <div className="form__info">
-                {el.info}
-              </div> : null}
-              {el.fields?.map(field => <DeliveryMethod key={field.id} data={field} />)}
-            </div>
-          ))}
-        </fieldset>
-        <fieldset className="form__fieldset">
-          {inputs?.payment.label ? <legend className="form__title">{inputs.payment.label}</legend> : null}
-          {inputs?.payment.fields?.map(el => <PaymentMenthod key={el.id} data={el} />)}
-        </fieldset>
+        <CustomerInfo data={inputs?.info} handler={changeHandler} />
+        <DeliveryMethod data={inputs?.order} handler={changeHandler} />
+        <PaymentMenthod data={inputs?.payment} handler={changeHandler} />
       </form>
     </div >
   )

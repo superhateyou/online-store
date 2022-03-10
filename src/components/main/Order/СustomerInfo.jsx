@@ -1,24 +1,12 @@
-export const CustomerInfo = ({ data }) => {
+import { CustomerComponent } from "./CustomerComponent"
+
+export const CustomerInfo = ({ data, handler }) => {
   return (
-    <div className="form__row">
-      <div className="form__col form__col_width_220">
-        <label htmlFor={data.id} className="form__label">
-          {data.title}
-        </label>
-      </div>
-      <div className={`form__col ${data.inputClass}`}>
-        <input
-          id={data.id}
-          name={data.name}
-          required=""
-          className="input"
-          type={data.type}
-        />
-        {data.hint ? <div className="form__info">{data.hint}</div> : null}
-      </div>
-      {data.formInfo ? <div className="form__col">
-        <div className="form__info">{data.formInfo}</div>
-      </div> : null}
-    </div>
+    <fieldset className="form__fieldset">
+      {data?.label ? <legend className="form__title">{data.label}</legend> : null}
+      {data?.fields?.map(el => (
+        <CustomerComponent data={el} handler={handler} key={el.id} />
+      ))}
+    </fieldset>
   )
 }
