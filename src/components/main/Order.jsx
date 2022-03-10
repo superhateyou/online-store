@@ -20,24 +20,24 @@ export const Order = () => {
       <h1 className="title">Оформление заказа</h1>
       <form className="form js-form-validate order-page__form">
         <fieldset className="form__fieldset">
-          <legend className="form__title">Информация о покупателе</legend>
-          {inputs?.info?.map(el => <CustomerInfo data={el} key={el.id} />)}
+          {inputs?.info.label ? <legend className="form__title">{inputs.info.label}</legend> : null}
+          {inputs?.info?.fields?.map(el => <CustomerInfo data={el} key={el.id} />)}
         </fieldset>
         <fieldset className="form__fieldset">
-          <legend className="form__title">Способ доставки</legend>
-          {inputs?.order?.map(el => (
+          {inputs?.order.label ? <legend className="form__title">{inputs.order.label}</legend> : null}
+          {inputs?.order.columns?.map(el => (
             <div key={el.id}>
-              {el.deliveryLabel ? <label className="form__label">{el.deliveryLabel}</label> : null}
-              {el.deliveryInfo ? <div className="form__info">
-                {el.deliveryInfo}
+              {el.label ? <label className="form__label">{el.label}</label> : null}
+              {el.info ? <div className="form__info">
+                {el.info}
               </div> : null}
               {el.fields?.map(field => <DeliveryMethod key={field.id} data={field} />)}
             </div>
           ))}
         </fieldset>
         <fieldset className="form__fieldset">
-          <legend className="form__title">Способ оплаты</legend>
-          {inputs?.payment?.map(el => <PaymentMenthod key={el.id} data={el} />)}
+          {inputs?.payment.label ? <legend className="form__title">{inputs.payment.label}</legend> : null}
+          {inputs?.payment.fields?.map(el => <PaymentMenthod key={el.id} data={el} />)}
         </fieldset>
       </form>
     </div >
