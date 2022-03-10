@@ -5,10 +5,7 @@ export const PaymentMenthod = ({ data, handler }) => {
 
   const inputHandler = (e) => {
     setInputState(e.target.value)
-  }
-
-  const blurHandler = () => {
-    let state = { value: inputState, id: "order-payment" }
+    let state = { value: e.target.value, id: "order-payment" }
     handler(state)
   }
 
@@ -25,7 +22,6 @@ export const PaymentMenthod = ({ data, handler }) => {
             value={el.type}
             className="radio__elem"
             checked={inputState === el.type ? true : false}
-            onBlur={e => blurHandler()}
             onChange={e => inputHandler(e)}
           />
           <label htmlFor={el.id} className="form__label radio__label">
