@@ -1,12 +1,39 @@
+import jsCookie from "js-cookie"
 import { Link } from "react-router-dom"
 import { GoodSizes } from "./GoodSizes"
+import { createRef } from "react"
 
 export const Good = ({ data }) => {
+  const quantityRef = createRef()
   let typeSpan
   if (data && data.type) {
     typeSpan = <span className={`flag flag_type_${data.type}`}>{data.type}</span>
   } else {
     typeSpan = <span className="flag"></span>
+  }
+
+  const logInfo = (e) => {
+    e.preventDefault()
+    const empty = []
+    const goodInCart = {
+      id: data.id,
+      size: "unknown",
+      price: data.price
+    }
+    if (localStorage.getItem("basket") === null) {
+      console.log("empty basket")
+      for (let i = 0; i < quantityRef.current.value; i++) {
+        empty.push(goodInCart)
+      }
+      localStorage.setItem("basket", JSON.stringify(empty))
+    } else if (localStorage.getItem("basket") !== null) {
+      const prevBasket = JSON.parse(localStorage.getItem("basket"))
+      console.log(prevBasket)
+      for (let i = 0; i < quantityRef.current.value; i++) {
+        prevBasket.push(goodInCart)
+      }
+      localStorage.setItem("basket", JSON.stringify(prevBasket))
+    }
   }
 
   return (
@@ -50,6 +77,7 @@ export const Good = ({ data }) => {
                   step={1}
                   min={1}
                   required=""
+                  ref={quantityRef}
                   className="input-number__elem"
                 />
                 <div className="input-number__counter">
@@ -62,7 +90,7 @@ export const Good = ({ data }) => {
                 </div>
               </div>
             </div>
-            <button type="submit" className="btn">
+            <button type="submit" onClick={logInfo} className="btn">
               Добавить в корзину
             </button>
           </form>

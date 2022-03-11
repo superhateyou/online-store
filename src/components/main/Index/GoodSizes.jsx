@@ -1,9 +1,9 @@
 export const GoodSizes = ({ data, id }) => {
   return (
-    <div className="checkbox-tile" key={`${data.id}${id}`}>
+    <div className="checkbox-tile">
       <input
-        id={`${data.id}-size${data.size}`}
-        name={`${data.id}[${data.size}]`}
+        id={`${id}-size${data.size}`}
+        name={`${id}[${data.size}]`}
         type="radio"
         defaultValue={data.size}
         required=""
@@ -11,7 +11,7 @@ export const GoodSizes = ({ data, id }) => {
         className="checkbox-tile__elem"
       />
       <label
-        htmlFor={`${data.id}-size${data.size}`}
+        htmlFor={`${id}-size${data.size}`}
         className="checkbox-tile__label"
       >
         {data.size}
