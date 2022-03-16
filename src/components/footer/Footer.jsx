@@ -5,7 +5,7 @@ import { FooterBottom } from "./FooterBottom"
 import { FooterCol } from "./FooterCol"
 import { SocialNetworks } from "./SocialNetworks"
 
-export const Footer = ({ data }) => {
+export const Footer = () => {
   const [footer, setFooter] = useState(undefined)
 
   useEffect(() => {

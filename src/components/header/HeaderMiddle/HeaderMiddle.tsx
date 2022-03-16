@@ -1,8 +1,15 @@
+import { Link } from "react-router-dom"
+import React from "react"
 import { Contacts } from "./Contacts"
 import { Basket } from "./Basket"
-import { Link } from "react-router-dom"
+import { IContacts, ILogo } from "../../../types/contacts.interface";
 
-export const HeaderMiddle = ({ data, logo }) => {
+export interface IProps {
+  contacts: IContacts;
+  logo: ILogo
+}
+
+export const HeaderMiddle = ({ contacts, logo }: IProps) => {
   return (
     <div className="header__middle">
       <div className="container header__container header__container_middle">
@@ -14,7 +21,7 @@ export const HeaderMiddle = ({ data, logo }) => {
               alt={logo && logo.alt}></img>
           </Link>
         </div>
-        <Contacts data={data} />
+        <Contacts contacts={contacts} />
         <Basket />
       </div>
     </div>
