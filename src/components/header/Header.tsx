@@ -14,10 +14,10 @@ interface IData {
 }
 
 export const Header = () => {
-  const [header, setHeader] = useState<Record<string, IData>>()
+  const [header, setHeader] = useState<IData | undefined>()
 
   useEffect(() => {
-    axios.get<Record<string, IData>>('/header.json')
+    axios.get<IData>('/header.json')
       .then(res => setHeader(res.data))
       .catch(err => console.log(err))
   }, [])
