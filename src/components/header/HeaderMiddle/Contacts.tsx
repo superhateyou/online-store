@@ -1,8 +1,15 @@
-export const Contacts = ({ data }) => {
+import React from "react"
+import { IContacts } from "../../../types/contacts.interface"
+
+interface Props {
+  contacts: IContacts
+}
+
+export const Contacts = ({ contacts }: Props) => {
   return (
     <div className="header__contacts">
       <span className="header__icon icon-comment" />
-      {data && data.info.map(el => (
+      {contacts && contacts.info.map(el => (
         <div className="header__col header__col_contacts"
           key={el.id}>
           <div className="contacts">
@@ -14,10 +21,10 @@ export const Contacts = ({ data }) => {
         </div>
       ))}
       <div className="header__col header__col_contacts">
-        <a href={data && data.button.link}
-          id={data && data.button.id}
+        <a href={contacts && contacts.button.link}
+          id={contacts && contacts.button.id}
           className="link">
-          {data && data.button.title}
+          {contacts && contacts.button.title}
         </a>
       </div>
     </div>
